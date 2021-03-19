@@ -20,6 +20,7 @@ public struct CDSideMenuMainView: View {
     
     /// The state properties used to handle the animations and content switches
     @State private var sideMenuOpen: Bool = false
+    @State private var barTitle: String = "Prueba 20000"
     @State private var selectedRow: Int = 0
         
     public var body: some View {
@@ -47,7 +48,8 @@ public struct CDSideMenuMainView: View {
                     /// If the navigationBar is hidden, we need to display a custom buttom, top left corner
                     /// and make it move at the same time than the rest
                     if self.configuration.navigationBarHidden {
-                        CDSideMenuButton(sideMenuOpen: self.$sideMenuOpen, toggleLeftMenu: self.toggleLeftMenu)
+                        CDSideMenuButton(sideMenuOpen: self.$sideMenuOpen,
+                                         toggleLeftMenu: self.toggleLeftMenu, barTitle: self.getNavigationBarTitle)
                             .frame(maxWidth: .infinity, alignment: .topLeading)
                             .padding(.top, 16)
                             .padding(.leading, 23)
@@ -70,7 +72,7 @@ public struct CDSideMenuMainView: View {
                 .navigationBarBackButtonHidden(true)
                 .navigationBarItems(leading: (
                     /// Top left menu button
-                    CDSideMenuButton(sideMenuOpen: self.$sideMenuOpen, toggleLeftMenu: self.toggleLeftMenu)
+                    CDSideMenuButton(sideMenuOpen: self.$sideMenuOpen, toggleLeftMenu: self.toggleLeftMenu, barTitle: "Titulo 2")
                 ))
             }
         }
@@ -84,7 +86,18 @@ public struct CDSideMenuMainView: View {
         case CDAccountItems.logOut.rawValue:
             return "Welcome"
         default:
-            return self.configuration.menuItems[self.selectedRow].title
+   
+            return  self.configuration.menuItems[self.selectedRow].title
+        }
+    }
+    
+    private var getNavigationBarTitle: String {
+        switch self.selectedRow {
+        case CDAccountItems.logOut.rawValue:
+            return "Welcome"
+        default:
+   
+            return  self.configuration.menuItems[self.selectedRow].title
         }
     }
     

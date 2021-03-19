@@ -12,6 +12,7 @@ struct CDSideMenuButton: View {
     
     @Binding var sideMenuOpen: Bool
     let toggleLeftMenu: () -> Void
+    var barTitle: String
     
     /// CDSideMenu Configuration
     @EnvironmentObject var configuration: CDSideMenuConfiguration
@@ -31,18 +32,29 @@ struct CDSideMenuButton: View {
                         .animation(.linear)
 
                 })
+            Spacer()
+                .frame(width: 100)
                 
-           /* Spacer()
-            Button(action: {
+                Button(action: {
+                    
+               }, label: {
+                Text(barTitle);
+              
+
+                })
+                
+                Spacer()
+                
+                Button(action: {
                     
                }, label: {
                     Image("man3")
                         .resizable()
-                        .frame(width: 60, height: 35)
+                        .frame(width: 50, height: 35)
                         .padding(.trailing, 20)
-                Spacer()
+              
 
-                })*/
+                })
 
                
             }
@@ -55,11 +67,11 @@ struct CDSideMenuButton: View {
 }
 
 struct CDSideMenuButton_Previews: PreviewProvider {
-    
+    @Binding var barTitle: String
     static func toggle() {
         print("Toggle test")
     }
     static var previews: some View {
-        CDSideMenuButton(sideMenuOpen: .constant(false), toggleLeftMenu: CDSideMenuButton_Previews.toggle)
+        CDSideMenuButton(sideMenuOpen: .constant(false), toggleLeftMenu: CDSideMenuButton_Previews.toggle,barTitle: "Titulo 0")
     }
 }

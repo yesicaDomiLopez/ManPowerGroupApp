@@ -16,7 +16,7 @@ extension CDSideMenuView {
 
         func body(content: Content) -> some View {
             content
-                .padding(.bottom, self.configuration.navigationBarHidden ? 30 : 100)
+                .padding(.top, self.configuration.navigationBarHidden ? 30 : 100)
                 .background(self.configuration.menuBackgroundColor)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .edgesIgnoringSafeArea(.leading) // to have the black shadow behind the NavigationBar to have the black shadow behind the NavigationBar

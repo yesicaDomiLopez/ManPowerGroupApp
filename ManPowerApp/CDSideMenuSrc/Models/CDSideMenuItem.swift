@@ -14,12 +14,14 @@ public struct CDSideMenuItem {
     let sfImage: String
     let view: AnyView
     let inAccountPanel: Bool
+    let showTitle: Bool
     
     /// Initialazer for each item
-    public init(title: String, sfImage: String, view: AnyView, inAccountPanel: Bool = false) {
+    public init(title: String, sfImage: String, view: AnyView, inAccountPanel: Bool = false, showTitle: Bool = true) {
         self.title = title
         self.sfImage = sfImage
         self.view = view
         self.inAccountPanel = inAccountPanel
+        self.showTitle = inAccountPanel
     }
 }
