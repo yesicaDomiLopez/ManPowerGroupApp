@@ -28,37 +28,22 @@ struct CDSideMenuButton: View {
                         .resizable()
                         .frame(width: self.configuration.menuButtonSize, height: self.configuration.menuButtonSize)
                         .foregroundColor(.blue)
-                        .rotationEffect(self.sideMenuOpen ? .degrees(-180) : .degrees(0))
-                        .animation(.linear)
+                        //.rotationEffect(self.sideMenuOpen ? .degrees(-180) : .degrees(0))
+                        //.animation(.linear)
 
                 })
             Spacer()
                 .frame(width: 100)
                 
-                Button(action: {
-                    
-               }, label: {
-                Text(barTitle);
+                Text(barTitle).foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/);
               
-
-                })
-                
                 Spacer()
-                
-                Button(action: {
-                    
-               }, label: {
-                    Image("man3")
-                        .resizable()
-                        .frame(width: 50, height: 35)
-                        .padding(.trailing, 20)
-              
+                Image("man3")
+                .resizable()
+                .frame(width: 50, height: 35)
+                .padding(.trailing, 20)
 
-                })
-
-               
             }
-            
             
             Spacer()
         }

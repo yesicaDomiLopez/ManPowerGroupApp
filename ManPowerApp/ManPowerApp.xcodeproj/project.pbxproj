@@ -34,6 +34,8 @@
 		411E6A9525F99EEB00D1758E /* CDSideMenuItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6A8725F99EEB00D1758E /* CDSideMenuItemList.swift */; };
 		411E6A9625F99EEB00D1758E /* CDSideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6A8825F99EEB00D1758E /* CDSideMenuView.swift */; };
 		411E6A9725F99EEB00D1758E /* CDSideMenuMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6A8925F99EEB00D1758E /* CDSideMenuMainView.swift */; };
+		521C7F4426073A3B0061D77F /*   RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C7F4326073A3A0061D77F /*   RemoteImage.swift */; };
+		521C7F4C2607E4120061D77F /* ExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C7F4B2607E4120061D77F /* ExampleListView.swift */; };
 		527C896C25FAB009004C9BF5 /* ExampleInformacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C896B25FAB009004C9BF5 /* ExampleInformacion.swift */; };
 		527C897125FAB15F004C9BF5 /* ExampleContacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C897025FAB15F004C9BF5 /* ExampleContacto.swift */; };
 		527C897625FAB20A004C9BF5 /* ExampleContra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C897525FAB20A004C9BF5 /* ExampleContra.swift */; };
@@ -91,6 +93,8 @@
 		411E6A8725F99EEB00D1758E /* CDSideMenuItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSideMenuItemList.swift; sourceTree = "<group>"; };
 		411E6A8825F99EEB00D1758E /* CDSideMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSideMenuView.swift; sourceTree = "<group>"; };
 		411E6A8925F99EEB00D1758E /* CDSideMenuMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSideMenuMainView.swift; sourceTree = "<group>"; };
+		521C7F4326073A3A0061D77F /*   RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "  RemoteImage.swift"; sourceTree = "<group>"; };
+		521C7F4B2607E4120061D77F /* ExampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListView.swift; sourceTree = "<group>"; };
 		527C896B25FAB009004C9BF5 /* ExampleInformacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInformacion.swift; sourceTree = "<group>"; };
 		527C897025FAB15F004C9BF5 /* ExampleContacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContacto.swift; sourceTree = "<group>"; };
 		527C897525FAB20A004C9BF5 /* ExampleContra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContra.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				411E69F625F99B3C00D1758E /* Preview Assets.xcassets */,
+				521C7F4326073A3A0061D77F /*   RemoteImage.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				527C896B25FAB009004C9BF5 /* ExampleInformacion.swift */,
 				527C897025FAB15F004C9BF5 /* ExampleContacto.swift */,
 				527C897525FAB20A004C9BF5 /* ExampleContra.swift */,
+				521C7F4B2607E4120061D77F /* ExampleListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				527C896C25FAB009004C9BF5 /* ExampleInformacion.swift in Sources */,
 				411E6A8B25F99EEB00D1758E /* CDViewsModifier.swift in Sources */,
 				411E6A9325F99EEB00D1758E /* CDSideMenuButton.swift in Sources */,
+				521C7F4C2607E4120061D77F /* ExampleListView.swift in Sources */,
 				411E69F025F99B3800D1758E /* SceneDelegate.swift in Sources */,
 				411E6A8C25F99EEB00D1758E /* CDSideMenuNotification.swift in Sources */,
 				411E6A9125F99EEB00D1758E /* Color.swift in Sources */,
@@ -404,6 +411,7 @@
 				411E6A9025F99EEB00D1758E /* String.swift in Sources */,
 				527C897625FAB20A004C9BF5 /* ExampleContra.swift in Sources */,
 				52EEB3A425FA02F7005810E7 /* Privacidad.swift in Sources */,
+				521C7F4426073A3B0061D77F /*   RemoteImage.swift in Sources */,
 				411E6A7025F99C2800D1758E /* ExampleBeneficios.swift in Sources */,
 				527C897125FAB15F004C9BF5 /* ExampleContacto.swift in Sources */,
 				411E6A6F25F99C2800D1758E /* ExampleSolicitudes.swift in Sources */,

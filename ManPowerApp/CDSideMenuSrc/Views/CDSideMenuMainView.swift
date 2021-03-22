@@ -90,6 +90,7 @@ public struct CDSideMenuMainView: View {
             return  self.configuration.menuItems[self.selectedRow].title
         }
     }
+    //Poner titulo a cada uno 
     
     private var getNavigationBarTitle: String {
         switch self.selectedRow {
