@@ -32,7 +32,7 @@ struct CDSideMenuRow: View {
                     .font(self.configuration.menuFont)
             }
             .foregroundColor(self.configuration.menuForegroundColor)
-            .padding()
+            .padding(5)
         })
     }
 }
